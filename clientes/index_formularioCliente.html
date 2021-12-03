@@ -15,14 +15,14 @@
 
 <?php
 //traigo la conexion a la bbdd
-require("../conexion/conexion.php");
+require("../conexion/conexion.html");
 
 //inicio la sesion
 /*session_start();
 //si el usuario no esta logueado
 if(!isset($_SESSION['nombre_admin'])){
 echo '<script>alert("sesion no iniciada")</script>';
-echo '<script>location.href="../index.php"</script>';
+echo '<script>location.href="../index.html"</script>';
 }*/
 
 //obtengo el id del puesto y lo guardo en la variable $id_puesto
@@ -74,7 +74,7 @@ echo '<script>location.href="../index.php"</script>';
 			ESTO SIEMPRE SE USA ASI PORQUE SI EN UN FUTURO HAY QUE AGREGAR O ELIMINAR PUESTOS O SECTORES SE MODIFICA EN LA BBDD
 		-->
 
-		<!--LE AGRUEGUE EL ACTION PARA QUE CUANDO APRIETEN EL BOTON GUARDAR, LLAME A OTRA PAGINA (guardar_formulario.php)-->
+		<!--LE AGRUEGUE EL ACTION PARA QUE CUANDO APRIETEN EL BOTON GUARDAR, LLAME A OTRA PAGINA (guardar_formulario.html)-->
 		<form name="form" action="guardar_formulario.php" method="POST">
 				<?php 
         			$cons_sectores = "select * from sectores";
@@ -143,7 +143,7 @@ echo '<script>location.href="../index.php"</script>';
 		<input type="submit" name="guardar" value="Guardar Formulario">
 	</form>
 	<br><br>
-		<button onclick="window.location.href='./index_puestos.php'">Volver</button>
+		<button onclick="window.location.href='./index_puestos.html'">Volver</button>
 </div>
 
 <?php
