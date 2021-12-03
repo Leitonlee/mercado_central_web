@@ -22,10 +22,10 @@ session_start();
 		<div class="alert alert-danger" role="alert">
     		<h1>Mercado Central</h1>
   			</div>
-	    	<!--boton que redirecciona a agregar_puesto.php-->
-			<button onclick="window.location.href='agregar_puesto.php'">Agregar Puesto</button>
+	    	<!--boton que redirecciona a agregar_puesto.html-->
+			<button onclick="window.location.href='agregar_puesto.html'">Agregar Puesto</button>
 			<!--boton para cerrar sesion-->
-			<button onclick="window.location.href='../menu_admin.php'">Volver</button>
+			<button onclick="window.location.href='../menu_admin.html'">Volver</button>
 			<br><br>
 			<!--tabla para mostrar los puestos-->
 			<table class="table-info">
@@ -52,8 +52,8 @@ session_start();
 						<td align="center" >$<?php echo $filas['canon'] ?></td>
 						<td align="center" ><?php echo $filas['superficie'] ?>m2</td>
 						<td>
-					    	<!--boton que redirecciona a editar_puesto.php con el id del puesto-->
-							<button onclick="window.location.href='editar_puesto.php?id=<?php echo $filas['id_puesto'] ?>'">Editar</button>
+					    	<!--boton que redirecciona a editar_puesto.html con el id del puesto-->
+							<button onclick="window.location.href='editar_puesto.html?id=<?php echo $filas['id_puesto'] ?>'">Editar</button>
                         	<!--boton que redirecciona a eliminar_puesto.php con el id del puesto-->
 							<button onclick="window.location.href='eliminar_puesto.php?id=<?php echo $filas['id_puesto'] ?>'">Eliminar</button>
 						</td>
