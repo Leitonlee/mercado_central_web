@@ -23,10 +23,10 @@ session_start();
 		<div class="alert alert-danger" role="alert">
     	<h1>Mercado Central</h1>
   		</div>
-		<!--boton que redirecciona a agregar_sector.php-->
-		<button onclick="window.location.href='agregar_sector.php'">Agregar Sector</button>
+		<!--boton que redirecciona a agregar_sector.html-->
+		<button onclick="window.location.href='agregar_sector.html'">Agregar Sector</button>
 		<!--boton para cerrar sesion-->
-		<button onclick="window.location.href='../menu_admin.php'">Volver</button>
+		<button onclick="window.location.href='../menu_admin.html'">Volver</button>
 		<br><br>	
 		<!--tabla para mostrar los sectores-->
 		<table class="table-info">
@@ -53,8 +53,8 @@ session_start();
 					<td align="center"><?php echo $filas['servicios'] ?></td>
 					<td align="center"><?php echo $filas['puestos'] ?></td>
 					<td>
-						<!--boton que redirecciona a editar_sector.php con el id del sector-->
-						<button onclick="window.location.href='editar_sector.php?id=<?php echo $filas['id_sector'] ?>'">Editar</button>
+						<!--boton que redirecciona a editar_sector.html con el id del sector-->
+						<button onclick="window.location.href='editar_sector.html?id=<?php echo $filas['id_sector'] ?>'">Editar</button>
 						<!--boton que redirecciona a eliminar_sector.php con el id del sector-->
 						<button onclick="window.location.href='eliminar_sector.php?id=<?php echo $filas['id_sector'] ?>'">Eliminar</button>
 					</td>
