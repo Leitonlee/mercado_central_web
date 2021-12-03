@@ -58,7 +58,7 @@ while($fila = mysqli_fetch_assoc($resultado)){
 		<!--boton submit para actualizar-->
 		<input type="submit" name="actualizar" value="Actualizar">
 		<!--boton para volver-->
-		<a href="index.php">Volver</a>
+		<a href="index.html">Volver</a>
 	</form>
 	<?php
 		}
@@ -91,8 +91,8 @@ while($fila = mysqli_fetch_assoc($resultado)){
     if($res){
 		//muesto el mensaje
     	echo '<script>alert("El puesto se actualizó correctamente")</script>';
-    	//redirecciono a index.php
-    	echo '<script>location.href="index.php"</script>';
+    	//redirecciono a index.html
+    	echo '<script>location.href="index.html"</script>';
     }
 }
 ?>
