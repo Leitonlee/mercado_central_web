@@ -27,7 +27,7 @@ session_start();
   		</div>
 		  <h2>Listado de Pre-contratos</h2><br>
 		<!--boton para cerrar sesion-->
-		<button onclick="window.location.href='../menu_admin.php'">Volver</button>
+		<button onclick="window.location.href='../menu_admin.html'">Volver</button>
 		<br><br>	
 		<!--tabla para mostrar los Pre-contratos-->
 		<table>
@@ -72,7 +72,7 @@ session_start();
 					<td align="center"><?php echo $filas['fechaFinal'] ?></td>
 					<td>
 						<!--boton que redirecciona-->
-						<button onclick="window.location.href='indexFinFormularioAdm.php?id=<?php echo $filas['id_formulario'] ;?>'">Aprobar</button>
+						<button onclick="window.location.href='indexFinFormularioAdm.html?id=<?php echo $filas['id_formulario'] ;?>'">Aprobar</button>
 					</td>
 				</tr>
 				<?php
