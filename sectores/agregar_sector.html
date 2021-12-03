@@ -52,7 +52,7 @@ require("../conexion/conexion.php");
 			<br><br>
 			<input type="submit" name="agregar" value="Agregar">
 			<!--boton para volver-->
-			<a href="index.php">Volver</a>
+			<a href="index.html">Volver</a>
 		</form>
 	</div>
 <?php
@@ -70,7 +70,7 @@ require("../conexion/conexion.php");
 		mysqli_query($conn,$sql);
 		if($nombre=1){
 			echo "<script>alert('Sector agregado correctamente')</script>";
-			header("location:index.php");
+			header("location:index.html");
 		}
 	}
 ?>
