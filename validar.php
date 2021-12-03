@@ -22,7 +22,7 @@ if ($f = mysqli_fetch_array($resultados)) {
 	if($f['rol'] == "admin"){
 		//echo '<script>alert("admin")</script>';
 		//como tiene rol admin lo redirecciono a menu_admin.php
-		header("Location:menu_admin.php");
+		header("Location:menu_admin.html");
 	//si no es admin, pregunto si es cliente	
 	}else if ($f['rol'] == "cliente"){
 		//guardo los datos en variables de sesion
@@ -30,12 +30,12 @@ if ($f = mysqli_fetch_array($resultados)) {
 		$_SESSION['nombre_usuario'] = $f['nombre_usuario'];
 		$_SESSION['rol'] = $f['rol'];*/
 		//lo redirecciono a menu_cliente.php
-		header("Location:menu_clientes.php");
+		header("Location:menu_clientes.html");
 	}
 //si no existe en la bbdd, muestro mensaje	
 } else {
 	//echo '<script>alert(".$f['nombre_usuario'].")</script>';
 	echo '<script>alert("Usuario y/o clave incorrectos")</script>';
-	echo '<script>location.href="index.php"</script>';
+	echo '<script>location.href="index.html"</script>';
 }
 ?>
